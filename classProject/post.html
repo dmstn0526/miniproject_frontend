@@ -1,0 +1,27 @@
+<html>
+<head>
+    <link rel="stylesheet" href="style.css"/>
+    <title>타이틀</title>
+</head>
+<body>
+    <div>
+        <div id="categoryList"></div>
+    </div>
+    <form id="form">
+        <div style="display: flex; flex-direction: column;">
+                <p>TITLE</p>
+                <input id="title" name="title" placeholder="글의 제목"/>
+                <p>CONTENT</p>
+                <textarea id="content" name="content"placeholder="글의 내용"></textarea>
+                <p>FILE</p>
+                <input id="image" name="image" type="file"/>
+                <p>Select Category</p>
+                <select id="category" name="category" placeholder="카테고리">
+                </select>
+                <br>
+        </div>
+    </form>
+    <button onclick="submitArticle()">글쓰기</button>
+</body>
+<script src="post.js"></script>
+</html>
